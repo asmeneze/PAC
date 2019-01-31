@@ -45,7 +45,7 @@ public class RSSReadTest {
 		//System.out.println(entry.getTitle());
  		}
                 List<SyndEnclosure> tempList = entry.getEnclosures();
-                File file = new File("C:/Users/cothe/Desktop/Test.mp3");
+                File file = new File("C:/Users/cothe/Desktop/temp.mp3");
                 URL tempURL = new URL(tempList.get(0).getUrl());
                 ReadableByteChannel readableByteChannel = Channels.newChannel(tempURL.openStream());
 
