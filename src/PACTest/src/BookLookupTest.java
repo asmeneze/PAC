@@ -39,12 +39,19 @@ public class BookLookupTest {
     JSONArray things = json.getJSONArray("items");
     //System.out.println(things.getJSONObject(0).getJSONObject("volumeInfo").get("title"));
     
-    System.out.println(json.getJSONArray("items").getJSONObject(0).getJSONObject("volumeInfo").get("title"));
-    System.out.println(json.getJSONArray("items").getJSONObject(0).getJSONObject("volumeInfo").get("subtitle"));
-    System.out.println(json.getJSONArray("items").getJSONObject(0).getJSONObject("volumeInfo").get("authors"));
-    System.out.println(json.getJSONArray("items").getJSONObject(0).getJSONObject("volumeInfo").get("publisher"));
-    System.out.println(json.getJSONArray("items").getJSONObject(0).getJSONObject("volumeInfo").get("publishedDate"));
-    System.out.println(json.getJSONArray("items").getJSONObject(0).getJSONObject("volumeInfo").get("pageCount"));
-    System.out.println(json.getJSONArray("items").getJSONObject(0).getJSONObject("volumeInfo").get("categories"));
+    System.out.println(json.getJSONArray("items").getJSONObject(0)
+            .getJSONObject("volumeInfo").get("title"));
+    System.out.println(json.getJSONArray("items").getJSONObject(0)
+            .getJSONObject("volumeInfo").get("subtitle"));
+    System.out.println(json.getJSONArray("items").getJSONObject(0)
+            .getJSONObject("volumeInfo").get("authors"));
+    System.out.println(json.getJSONArray("items").getJSONObject(0)
+            .getJSONObject("volumeInfo").get("publisher"));
+    System.out.println(json.getJSONArray("items").getJSONObject(0)
+            .getJSONObject("volumeInfo").get("publishedDate"));
+    System.out.println(json.getJSONArray("items").getJSONObject(0)
+            .getJSONObject("volumeInfo").get("pageCount"));
+    System.out.println(json.getJSONArray("items").getJSONObject(0)
+            .getJSONObject("volumeInfo").get("categories"));
   }
 }
